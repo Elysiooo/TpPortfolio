@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Jayson DAUGEY</h1>
+        <div class="navbar">
+            <div class="container">
+                <a href="#" class="site-logo">
+                    <img src="https://preview.redd.it/uomf0s4nnq341.gif?format=png8&s=6dde74818685e82411617ae5f69852027f74e553" alt="Jayson" width="25%">
+                </a>
+                <nav>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#presentation">Présentation</a>
+                        </li>
+                        <li>
+                            <a href="#mes-competences">Compétences</a>
+                        </li>
+                        <li>
+                            <a href="#mes-projets">Projets</a>
+                        </li>
+                        <li>
+                            <a href="#stats">Statistiques</a>
+                        </li>
+                        <li>
+                            <a href="#quotes">Citations</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="site-main">
+
+        <section id="presentation" class="bg-light">
+            <div class="container">
+                <img src="https://www.leparisien.fr/resizer/1AGYPbXFxlVn0o3ntYvituNjDrw=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/JIM6IPXQURGDBMKHOPLS27NSQE.jpg" width="75%" alt="Jayson Daugey">
+                <div>
+                    <h2>À propos de moi</h2>
+                    <p>Etudiant aspirant a devenir futur développeur dans l'informatique</p>
+                    <a class="btn btn-primary">
+                        Télécharger mon CV
+                    </a>
+                    <a class="btn btn-primary-outline">
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="mes-competences" class="bg-light">
+            <div class="container">
+                <h2 class="text-center">Mes compétences</h2>
+                <div class="competences">
+
+                    <article class="card">
+                        <img src="assets/images/html.png" alt="HTML">
+                        <h3>HTML</h3>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/images/css.png" alt="CSS">
+                        <h3>CSS</h3>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/images/js.png" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/images/php.png" alt="PHP">
+                        <h3>PHP</h3>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/images/mysql.png" alt="MySQL">
+                        <h3>MySQL</h3>
+                    </article>
+              </div>
+
+            </div>
+        </section>
+
+        <section id="mes-projets">
+            <div class="container">
+
+                <h2 class="text-center">Mes Projets</h2>
+
+                <ul id="filters">
+                    <li>
+                        <button class="active" data-category="all">Tous</button>
+                    </li>
+                    <li>
+                        <button data-category="dev-back">Dev Back</button>
+                    </li>
+                    <li>
+                        <button data-category="dev-front">Dev Front</button>
+                    </li>
+                    <li>
+                        <button data-category="reseau">Réseau</button>
+                    </li>
+                </ul>
+
+                <div id="projets">
+
+                    <article class="active" data-categories="dev-front dev-back" data-description="Voici ici tout mon parcours depuis ma premiere annee de BTS pour aider l'entreprise Alterna Tri.">
+                        <h3>Alterna Tri</h3>
+                        <svg class="loupe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </article>
+                
+                    <article class="active" data-categories="dev-front dev-back reseau" data-description="J'ai aucune idée de ce que c'est a part que si je le traduit ça fait travailler ensemble hehe trop fort en anglais">
+                        <h3>Work Together</h3>
+                        <svg class="loupe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </article>
+                
+                    <article class="active" data-categories="dev-front" data-description="Mon Stage 1ère année (chiant a trouver)">
+                        <h3>Stage 1ère année</h3>
+                        <svg class="loupe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </article>
+                
+                    <article class="active" data-categories="dev-front dev-back" data-description="Mon Stage 2ème année si j'suis en vie d'ici là :3">
+                        <h3>Stage 2ème année</h3>
+                        <svg class="loupe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </article>
+                
+                </div>
+                
+
+            </div>
+        </section>
+        <section id="stats">
+            <h2 class="text-center">Statistiques</h2>
+            <div class="statistics">
+                <article>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="50"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                    <span class="value" id="code-count">0</span>
+                    <h3>Lignes de code</h3>
+                </article>
+                <article>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"width="50"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8l-.7 0c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                    <span class="value" id="project-count">0</span>
+                    <h3>Projets</h3>
+                </article>
+                <article>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"width="50"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg>
+                    <span class="value" id="years-count">0</span>
+                    <h3>Années d'expérience</h3>
+                </article>
+            </div>
+    </section>
+    
+    <section id="quotes">
+        <div class="container">
+            <h2 class="text-center">Citations</h2>
+    
+            <div class="quote">
+                <p id="object"></p>
+                <cite id="author"></cite>
+            </div>
+            <button class="btn btn-primary" onclick='window.location.reload(false)'>Charger une autre citation</button>
+        </div>
+    </section>
+    
+        </div>
+        </main>
+    
+        <footer>
+            <div class="footer-container">
+                <!-- Section gauche : Description -->
+                <div class="footer-about">
+                    <h3>À propos</h3>
+                    <p>Bienvenue sur mon site ! Suivez-moi sur mes réseaux pour ne rien rater.</p>
+                </div>
+        
+                <!-- Section centrale : Réseaux sociaux -->
+                <div class="footer-social">
+                    <h3>Suivez-moi</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/jayson_dgy/" class="social-link">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/@jayson_dgy" class="social-link">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://x.com/Mallow530" class="social-link">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X">
+                        </a>
+                        <a href="Tiens easter egg c mon discord .json_dgy" class="social-link">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord">
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Section droite : Liens utiles -->
+                <div class="footer-links">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#presentation">À propos</a></li>
+                        <li><a href="#presentation">Contact</a></li>
+                        <li><a href="#footer-links">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Bas de page -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Jayson Daugey. Tous droits réservés.</p>
+            </div>
+        </footer>
+        <a href="#" class="top"><svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 512 512" stroke="white" stroke-width="20"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg></a>
+    </body>
+</html>
